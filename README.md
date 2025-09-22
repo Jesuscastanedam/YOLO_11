@@ -1,25 +1,25 @@
 # YOLO 11 Object Detection Explorer
 
-## Descripción
+## Description
 
-Este proyecto utiliza YOLO 11, el último modelo de detección de objetos de Ultralytics, para realizar reconocimiento en tiempo real a través de la webcam. El código está adaptado del trabajo de **Albert Coronado Calzada**.
+This project uses YOLO 11, the latest object detection model from Ultralytics, to perform real-time recognition through webcam. The code is adapted from the work of **Albert Coronado Calzada**.
 
-## Características
+## Features
 
-- Detección de objetos en tiempo real usando YOLO 11
-- Interfaz de webcam integrada
-- Visualización de cajas delimitadoras con etiquetas de confianza
-- Soporte para más de 80 clases de objetos (dataset COCO)
+- Real-time object detection using YOLO 11
+- Integrated webcam interface
+- Bounding box visualization with confidence labels
+- Support for 80+ object classes (COCO dataset)
 
-## Configuración del Entorno
+## Environment Setup
 
-### 1. Crear entorno virtual
+### 1. Create virtual environment
 
 ```bash
-# Crear entorno virtual
+# Create virtual environment
 virtualenv venv 
 
-# Activar entorno virtual
+# Activate virtual environment
 # Linux/Mac:
 source venv/bin/activate
 
@@ -27,76 +27,76 @@ source venv/bin/activate
 venv\Scripts\activate
 ```
 
-### 2. Instalar dependencias
+### 2. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Las principales dependencias incluyen:
+Main dependencies include:
 - ultralytics
 - opencv-python
 - torch
 
-### Controles
+### Controls
 
-- **'q'**: Presiona para salir de la aplicación
+- **'q'**: Press to exit the application
 
-## Funcionalidad
+## Functionality
 
-El sistema:
+The system:
 
-1. Carga el modelo YOLO 11 preentrenado (`yolo11l.pt`)
-2. Captura video en tiempo real desde tu webcam
-3. Procesa cada frame para detectar objetos
-4. Dibuja cajas delimitadoras alrededor de los objetos detectados
-5. Muestra el nombre del objeto y su nivel de confianza
+1. Loads the pre-trained YOLO 11 model (`yolo11l.pt`)
+2. Captures video in real-time from your webcam
+3. Processes each frame to detect objects
+4. Draws bounding boxes around detected objects
+5. Displays object name and confidence level
 
-## Resultados Experimentales
+## Experimental Results
 
-Durante las pruebas, el modelo demostró:
+During testing, the model demonstrated:
 
-**Detecciones exitosas:**
-- Personas
-- Dispositivos móviles (iPhone)
-- Botellas de agua
+**Successful detections:**
+- People
+- Mobile devices (iPhone)
+- Water bottles
 
-**Limitaciones observadas:**
-- Confusión entre objetos pequeños (ej: figura de Luigi detectada como tarta)
+**Observed limitations:**
+- Confusion between small objects (e.g., Luigi figure detected as cake)
 
-Esto ilustra tanto el potencial como las limitaciones actuales de los sistemas de visión por computadora, que dependen de los datos de entrenamiento del modelo.
+This illustrates both the potential and current limitations of computer vision systems, which depend on the model's training data.
 
-## Estructura del Proyecto
+## Project Structure
 
 ```
 .
-├── Explorer.ipynb          # Notebook principal con análisis paso a paso
-├── requirements.txt        # Dependencias del proyecto
-└── README.md               # Este archivo
+├── Explorer.ipynb          # Main notebook with step-by-step analysis
+├── requirements.txt        # Project dependencies
+└── README.md               # This file
 ```
 
-## Modelo YOLO 11
+## YOLO 11 Model
 
-YOLO 11 representa el estado del arte en detección de objetos, ofreciendo:
-- Mayor precisión que versiones anteriores
-- Procesamiento en tiempo real optimizado
-- Soporte para múltiples tareas de visión por computadora
+YOLO 11 represents the state of the art in object detection, offering:
+- Higher precision than previous versions
+- Optimized real-time processing
+- Support for multiple computer vision tasks
 
-## Créditos
+## Credits
 
-Código adaptado del trabajo de **Albert Coronado Calzada**.
+Code adapted from the work of **Albert Coronado Calzada**.
 
-Basado en el modelo YOLO 11 de [Ultralytics](https://docs.ultralytics.com/models/yolo11/).
+Based on YOLO 11 model from [Ultralytics](https://docs.ultralytics.com/models/yolo11/).
 
-## Aplicaciones Potenciales
+## Potential Applications
 
-Este tipo de tecnología tiene aplicaciones infinitas:
-- Sistemas de seguridad inteligentes
-- Aplicaciones en retail y manufactura
-- Análisis de comportamiento
-- Robótica y vehículos autónomos
-- Aplicaciones médicas y de salud
+This type of technology has infinite applications:
+- Intelligent security systems
+- Retail and manufacturing applications
+- Behavioral analysis
+- Robotics and autonomous vehicles
+- Medical and health applications
 
-## Licencia
+## License
 
-Este proyecto es de propósito educativo y experimental.
+This project is for educational and experimental purposes.
